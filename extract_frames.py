@@ -2,7 +2,7 @@ import skvideo.io
 from matplotlib import pyplot as plt
 import random
 
-#USAGE: python extract_images_from_videos.py --video-path="/video.mkv" --num-images=250 --save-to-path="/home/"
+#USAGE: python extract_frames.py --video-path="/video.mkv" --num-images=1000 --save-to-path="/home/"
 
 # Return 'num_images' no. of random images
 def random_items(iterator, num_images=1):
