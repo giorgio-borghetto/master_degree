@@ -27,16 +27,12 @@ def extract_images(video_path, num_images, save_to_path):
     for frame in random_set:
         directory = "{0}/image{1}.png".format(save_to_path, count)
         plt.imsave(directory, frame)
-        # if you instead want to just show the images in a notebook
-        # instead of saving, use imshow()
-        # plt.imshow(frame, interpolation='nearest')
         plt.show()
         count += 1
 
 if __name__ == '__main__':
 
     import argparse
-
     parser = argparse.ArgumentParser()
     parser.add_argument('--video-path', required=True)
     parser.add_argument('--num-images', required=True)
